@@ -1,0 +1,270 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+header {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav h1 a {
+  font-size: 2rem;
+  color: #444;
+}
+
+nav .header-navi {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav .header-navi li {
+  margin-left: 20px;
+}
+
+nav .header-navi li a {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+/* メインコンテンツ */
+.section-title {
+  margin: 0 0 20px;
+  font-family: 'Crimson Text', serif;
+  font-size: 5rem;
+}
+
+/* トップ */
+.top-wrapper {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.top-wrapper p {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.site-title {
+  margin-bottom: 0;
+  font-family: 'Crimson Text', serif;
+  font-size: 6rem;
+}
+
+/* アバウトコンテンツ */
+.about-wrapper {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.profile-card {
+  display: inline-flex;
+  width: 65%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  padding: 2% 0;
+  background-color: #777;
+}
+
+.profile-left {
+  width: 35%;
+  padding-left: 5%;
+}
+
+.profile-left dl dt {
+  float: left;
+  clear: both;
+  width: 40%;
+  text-align: right;
+}
+
+.profile-left dl dd {
+  width: 70%;
+}
+
+.profile-image img {
+  width: 40%;
+  border-radius: 100%;
+}
+
+.profile-right {
+  width: 65%;
+  padding-left: 10%;
+}
+
+.profile-right dl dt {
+  float: left;
+  clear: both;
+  text-align: right;
+}
+
+.profile-right dl dd {
+  width: 75%;
+}
+
+.profile-right h3 {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 3rem;
+}
+
+.profile-right p {
+  width: 65%;
+  text-align: left;
+}
+
+/* ワークスコンテンツ */
+.works-wrapper {
+  margin: 0 auto 100px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.works-contents-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-contents-wrapper a {
+  width: 30%;
+  font-size: 15px;
+  color: #444;
+}
+
+/* ニュースコンテンツ */
+.news-wrapper {
+  background-color: #eee;
+  text-align: center;
+}
+
+.post {
+  display: inline-flex;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  width: 35%;
+  padding: 20px;
+  box-sizing: inherit;
+  background-color: #fff;
+}
+
+.post-thumb {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.post-thumb .favorite {
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background-color: #333;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.post-thumb .favorite:hover {
+  color: #ffff1e;
+}
+
+.post-thumb .favorite-on {
+  border-color: #ffff1e;
+  color: #ffff1e;
+}
+
+.post-thumb img {
+  width: 100%;
+  height: 90%;
+}
+
+.entry-property {
+  width: 50%;
+  text-align: left;
+}
+
+.entry-property h3 {
+  margin-bottom: 0;
+}
+
+.entry-property h3 a {
+  color: #444;
+  font-size: 30px;
+}
+
+.entry-property h3 a:hover {
+  color: #1515a8;
+}
+
+.entry-property .entry-date {
+  margin-top: 0;
+  color: #000;
+}
+
+.entry-property p {
+  color: #ccc;
+}
+
+.entry-property .readmore-btn {
+  color: #444;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.entry-property .readmore-btn:hover {
+  color: #1515a8;
+}
+
+/* フッター */
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+footer small {
+  font-size: 14px;
+  color: #fff;
+}
+
+#pageTopBtn {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  display: none;
+  border-radius: 50px;
+  width: 3%;
+  height: 5%;
+  background-color: #00f;
+  line-height: 1.3;
+}
+
+#pageTopBtn a {
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
