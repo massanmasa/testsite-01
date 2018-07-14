@@ -18,6 +18,11 @@ jQuery(function($) {
     });
 
     // Favorite News
+    $('#favorite-btn').on('click', function() {
+        $('.news-contents-wrapper article').hide();
+        $('.favorite-on').parents('article').show();
+    });
+
     $('.favorite').on('click', function() {
         $(this).toggleClass('favorite-on');
     });
