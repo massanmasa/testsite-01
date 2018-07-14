@@ -81,6 +81,7 @@ nav .header-navi li a {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
   padding: 2% 0;
   background-color: #777;
+  color: #f0e4e4;
 }
 
 .profile-left {
@@ -152,6 +153,17 @@ nav .header-navi li a {
 .news-wrapper {
   background-color: #eee;
   text-align: center;
+}
+
+.news-btn-wrapper {
+  margin-bottom: 50px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #fff;
 }
 
 .post {
@@ -255,11 +267,11 @@ footer small {
   right: 2%;
   bottom: 2%;
   display: none;
-  border-radius: 50px;
+  border-radius: 50%;
   width: 3%;
-  height: 5%;
+  height: 8%;
   background-color: #00f;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 #pageTopBtn a {
