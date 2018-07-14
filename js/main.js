@@ -1,4 +1,21 @@
+const lsCheck = () => {
+    try {
+        if (typeof localStorage == 'undefined') {
+            return false;
+        } else if (window.localStorage) {
+            // detect IE10 and private mode
+        }
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
+
 jQuery(function($) {
+
+    // localstorage使用できるか判定
+    lsCheck();
+
     // 200px以上スクロールされた場合、ページトップボタンを表示する
     $(window).on('scroll', function() {
         if ($(this).scrollTop() >= 200) {
