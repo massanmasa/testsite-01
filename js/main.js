@@ -19,7 +19,6 @@ const lsCheck = () => {
 const saveStorage = () => {
     // let id = $(this).parents('article').attr('id');
     let id = $('.favorite-on').parents('article').attr('id');
-    console.log(id);
     storage['newsId'] = id;
 }
 
