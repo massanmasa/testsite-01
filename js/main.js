@@ -17,9 +17,10 @@ const lsCheck = () => {
 
 // localstorageにデータを保存させる関数
 const saveStorage = () => {
-    let id = $(this).parents('article').attr('id');
+    // let id = $(this).parents('article').attr('id');
+    let id = $('.favorite-on').parents('article').attr('id');
     console.log(id);
-    storage.setItem('newsId', id);
+    storage['newsId'] = id;
 }
 
 jQuery(function($) {
