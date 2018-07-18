@@ -17,15 +17,30 @@ const lsCheck = () => {
 
 // localstorageにデータを保存させる関数
 const saveStorage = () => {
-    // let id = $(this).parents('article').attr('id');
     let id = $('.favorite-on').parents('article').attr('id');
     storage['newsId'] = id;
+}
+
+// localstorageのデータ取得、並びに処理
+const loadStorage = () => {
+    if (storage === {}) {
+        return;
+    }
+    let setId  = storage['newsId'];
+    for (let i = 0; i < storage.length; i++) {
+        if ($('article').attr('id') === setId) {
+           $(this).find('i').addClass('favorite-on');
+        }
+    }
 }
 
 jQuery(function($) {
 
     // localstorage使用できるか判定
     lsCheck();
+
+    // localstorageの中身をページに反映させる
+    loadStorage();
 
     // 200px以上スクロールされた場合、ページトップボタンを表示する
     $(window).on('scroll', function() {
