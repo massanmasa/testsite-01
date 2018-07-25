@@ -1,6 +1,9 @@
 // localstorage使用の宣言
 let storage = localStorage;
 
+// localStorage用配列
+let arrayId = [];
+
 // localstorageがブラウザで使えるか判定する関数
 const lsCheck = () => {
     try {
@@ -18,19 +21,24 @@ const lsCheck = () => {
 // localstorageにデータを保存させる関数
 const saveStorage = () => {
     let id = $('.favorite-on').parents('article').attr('id');
-    storage['newsId'] = id;
+    arrayId.push(id);
+    let data = JSON.stringify(arrayId);
+    storage.setItem('newsId', data);
+    console.log(storage);
 }
 
 // localstorageのデータ取得、並びに処理
 const loadStorage = () => {
-    if (storage === {}) {
+    if (storage.length === 0) {
         return;
     }
-    let setId  = storage['newsId'];
-    for (let i = 0; i < storage.length; i++) {
-        if ($('article').attr('id') === setId) {
-           $(this).find('i').addClass('favorite-on');
-        }
+    // arrayId.push(storage);
+    let setId  = JSON.parse(storage.getItem('newsId'));
+    for (let i = 0; i < setId[i]; i++) {
+        // if($('article').attr('id') === setId[i]) {
+            $('#' + setId[i]).find('i').addClass('favorite-on');
+            console.log('#' + setId[i]);
+        // }
     }
 }
 
@@ -42,6 +50,7 @@ jQuery(function($) {
     // localstorageの中身をページに反映させる
     loadStorage();
 
+    console.log(storage);
     // 200px以上スクロールされた場合、ページトップボタンを表示する
     $(window).on('scroll', function() {
         if ($(this).scrollTop() >= 200) {
