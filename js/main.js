@@ -75,6 +75,10 @@ jQuery(function($) {
         $('.favorite-on').parents('article').show();
     });
 
+    $('#reset-btn').on('click', function() {
+        $('.news-contents-wrapper article').show();
+    });
+
     $('.favorite').on('click', function() {
         $(this).toggleClass('favorite-on');
         if ($(this).hasClass('favorite-on')) {
