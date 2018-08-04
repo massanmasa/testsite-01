@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -25,7 +29,7 @@ nav {
 }
 
 nav h1 a {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #444;
 }
 
@@ -40,7 +44,7 @@ nav .header-navi li {
 }
 
 nav .header-navi li a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #444;
 }
 
@@ -48,7 +52,7 @@ nav .header-navi li a {
 .section-title {
   margin: 0 0 20px;
   font-family: 'Crimson Text', serif;
-  font-size: 5rem;
+  font-size: 6.5rem;
 }
 
 /* トップ */
@@ -59,14 +63,14 @@ nav .header-navi li a {
 
 .top-wrapper p {
   margin-top: 0;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   color: #333;
 }
 
 .site-title {
   margin-bottom: 0;
   font-family: 'Crimson Text', serif;
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 /* アバウトコンテンツ */
@@ -81,6 +85,7 @@ nav .header-navi li a {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
   padding: 2% 0;
   background-color: #777;
+  font-size: 1.6rem;
   color: #f0e4e4;
 }
 
@@ -216,6 +221,7 @@ nav .header-navi li a {
 .entry-property {
   width: 50%;
   text-align: left;
+  font-size: 1.6rem;
 }
 
 .entry-property h3 {
@@ -269,14 +275,14 @@ footer small {
   display: none;
   border-radius: 50%;
   width: 3%;
-  height: 8%;
+  height: 5%;
   background-color: #00f;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 #pageTopBtn a {
   display: block;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #fff;
 }
