@@ -249,6 +249,33 @@ footer {
     }
 }
 
+/* コンタクトフォーム */
+.contact-wrapper {
+    font-size: 1.4rem;
+}
+
+.contact-menu {
+    margin-bottom: 2rem;
+    dt {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+}
+
+.required {
+    margin-right: 1rem;
+    color: #87cefa;
+}
+
+.required-text {
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #dc143c;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #fff;
+}
+
 #pageTopBtn {
     position: fixed;
     right: 2%;
